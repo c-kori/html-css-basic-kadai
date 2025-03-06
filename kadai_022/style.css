@@ -36,7 +36,7 @@ main{
 
 .contents{
   border: solid 3px rgb(238, 204, 204);
-  fkex-basis: 25%;
+  flex-basis: 25%;
   padding: 10px 15px;
   margin: 20px 0px;
   text-align: center;
@@ -46,10 +46,11 @@ h2{
   color: rgb(244, 79, 79);
   font-size: 25px;
   border-bottom: dotted 3px rgb(236, 122, 122);
-  ::before{
-    content: "●";
-    color: rgb(239, 111, 139);
-  }
+}
+
+h2::before{
+  content: "●";
+  color: rgb(239, 111, 139);
 }
 
 p:nth-child(3)::first-letter{
@@ -89,6 +90,6 @@ footer a:hover{
  }
 
  #parent{
-  display: block;
+  flex-direction: column;
  }
 }
